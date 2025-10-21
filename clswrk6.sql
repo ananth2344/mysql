@@ -1,13 +1,5 @@
 CREATE TABLE students (
-    id INT PRIMARY KEY,
-    name TEXT,
-    course TEXT,
-    score INT,
-    email TEXT,
-    phone TEXT,
-    city TEXT,
-    bonus_points INT
-);
+    id INT PRIMARY KEY, name TEXT, course TEXT, score INT, email TEXT, phone TEXT, city TEXT, bonus_points INT);
 INSERT INTO students (id, name, course, score, email, phone, city, bonus_points) VALUES
 (1, 'Asha', 'Python', 85, 'asha@mail.com', '9876543210', 'Chennai', 5),
 (2, 'Ravi', 'Python', 90, 'ravi@mail.com', '9876543211', 'Chennai', NULL),
@@ -20,3 +12,4 @@ SELECT course, AVG(score) AS average_score FROM students GROUP BY course HAVING 
 SELECT name, score FROM students WHERE city IN ('Chennai', 'Mumbai');
 SELECT * FROM students WHERE bonus_points IS NULL;
 SELECT name FROM students WHERE city = 'Chennai' UNION SELECT name FROM students WHERE city = 'Mumbai';
+
