@@ -6,3 +6,4 @@ TRUNCATE TABLE products;
 DROP DATABASE GroceryShop;
 
 
+
